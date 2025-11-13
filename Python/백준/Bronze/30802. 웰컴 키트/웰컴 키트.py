@@ -1,0 +1,6 @@
+n = int(input())
+data = list(map(int, input().split()))
+T, P = map(int, input().split())
+count_t = sum((x+T-1)//T for x in data)
+print(count_t)
+print(n//P, n%P)
